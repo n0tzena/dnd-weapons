@@ -15,14 +15,8 @@ async function CreateWeapon(file, divId=null)
     const weaponWeight = document.createElement("span"); weaponWeight.innerHTML = parsedJSON.weight + " <i class='icon peso'></i>";
     const spacing = document.createElement("div"); spacing.style = "height: 5px";
     const weaponValue = document.createElement("span"); weaponValue.innerHTML = parsedJSON.value + " <i class='icon coins'></i>"
-
+    
     const description = document.createElement("div"); description.classList.add("description");
-    parsedJSON.properties.forEach(propriedade => 
-    {
-        var descriptionSection = document.createElement("div"); descriptionSection.classList.add("descriptionSection");
-        descriptionSection.innerHTML = propriedade.property;
-        description.appendChild(descriptionSection);
-    });
 
     header.appendChild(weaponIcon);
 
@@ -36,7 +30,18 @@ async function CreateWeapon(file, divId=null)
     weaponInfo.appendChild(weaponValue);
 
     weapon.appendChild(header);
-    weapon.appendChild(description);
+
+    if(parsedJSON.properties)
+    {
+        weapon.appendChild(description);
+        parsedJSON.properties.forEach(propriedade => 
+            {
+                var descriptionSection = document.createElement("div"); descriptionSection.classList.add("descriptionSection");
+                descriptionSection.innerHTML = propriedade.property;
+                description.appendChild(descriptionSection);
+            });
+    }
+
     if(divId)
     {
         document.getElementById(divId).appendChild(weapon);

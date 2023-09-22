@@ -1,0 +1,19 @@
+{
+    "name": "Martelo Leve",
+    "weaponIcon": "claw-hammer.svg",
+    "damageType": "1d4 Concussão (Distância 6/18)",
+    "weight": "1kg",
+    "value": "2po",
+    "properties": 
+    [
+        {
+            "property": "<strong>Leve</strong> <i class='icon leve'></i>: Combate com duas armas: Você pode atacar com outra arma leve na outra mão."
+        },
+        {
+            "property": "<strong>Arremesso</strong> <i class='icon arremesso'></i>: Você pode fazer um ataque à distância com a arma. Você utiliza os mesmos modificadores que poderia utilizar num ataque corpo a corpo."
+        },
+        {
+            "property": "<strong>Distância</strong> <i class='icon distancia'></i>: Esta arma pode ser usada para um ataque à distância. Você está em desvantagem se atacar além da distância mínima (primeiro número). Você não pode atacar um alvo além da distância máxima (segundo número)."
+        }
+    ]
+}

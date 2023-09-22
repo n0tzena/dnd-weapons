@@ -1,0 +1,16 @@
+{
+    "name": "Clava Grande",
+    "weaponIcon": "wood-club.svg",
+    "damageType": "1d8 Concussão",
+    "weight": "5 kg",
+    "value": "2 pp",
+    "properties": 
+    [
+        {
+            "property": "<strong>Pesada</strong> <i class='icon pesada'></i>: Criaturas pequenas têm desvantagem ao realizar jogadas de ataque com essa arma."
+        },
+        {
+            "property": "<strong>Duas Mãos</strong> <i class='icon duas-maos'></i>: Essa arma requer as duas mãos para realizar um ataque."
+        }
+    ]
+}

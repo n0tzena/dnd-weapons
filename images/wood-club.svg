@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   style="height: 494px; width: 494px;"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="wood-club.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.6035156"
+     inkscape:cx="255.68819"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <path
+     d="M0 0h512v512H0z"
+     fill="#000"
+     fill-opacity="1"
+     id="path1" />
+  <g
+     class=""
+     transform="translate(0,0)"
+     id="g10"
+     style="">
+    <g
+       id="g9">
+      <path
+         d="m 405.414,41.422 c -2,0.03 -4.06,0.133 -6.18,0.298 -11.58,0.906 -24.367,3.983 -37.02,7.41 -8.07436,0.92648 -26.40791,6.577617 -40.383,13.893 -25.135,12.94 -43.79822,29.336962 -66.178,52.05796 -6.25527,8.33022 -10.48961,11.60813 -22.98367,35.53533 -4.20451,3.13837 -16.50622,34.37608 -16.31833,38.86971 l -17.225,108.624 -2.75,-61.597 c -10.444,24.205 -21.82,48.42 -36.09,70.063 C 119.643,368.216 28.322,462.01 28.322,462.01 l -0.07,0.072 -0.07,0.07 c -3.905,3.85 -3.91,5.573 -3.475,7.693 0.29,1.418 1.348,3.368 3.168,5.43 l 97.166,-78.713 -84.007,87.3 c 5.778,2.305 11.906,3.587 15.895,3.495 6.885,-6.482 66.713,-62.5 107.11,-88.644 38.117,-24.67 69.79,-54.084 106.32,-82.045 l 100.464,-54.936 c 20.40476,-21.22211 86.35435,-51.69256 80.949,-119.181 0.92,-5.208 1.667,-10.42 2.19,-15.58 1.022,-10.1 1.175,-19.927 0.35,-29.187 l -28.927,31.25 19.88,-64.613 c -1.88,-3.562 -4.056,-6.88 -6.556,-9.907 -7.064,-8.55 -16.195,-12.217 -27.474,-12.957 -1.937,-0.123 -3.879,-0.168 -5.82,-0.134 z"
+         class=""
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path4"
+         sodipodi:nodetypes="cccccccccccccccccccccccccccccc" />
+    </g>
+  </g>
+</svg>

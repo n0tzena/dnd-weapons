@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   style="height: 494px; width: 494px;"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="short-scythe.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.6035156"
+     inkscape:cx="255.68819"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <path
+     d="M0 0h512v512H0z"
+     fill="#000"
+     fill-opacity="1"
+     id="path1" />
+  <g
+     class=""
+     transform="translate(99,36.936663)"
+     id="g18">
+    <g
+       id="g17"
+       transform="matrix(1.1696161,0,0,1.1696161,-27.528866,-36.332966)">
+      <path
+         d="m 35.379,53.525 c -7.731,3.05 -12.088,5.048 -12.088,5.048 l 6.656,17.154 47.029,-18.814 c -0.001,0 12.46,31.158 25.078,63.677 C 141.972,93.402 209.782,60.105 301.311,61.392 217.284,-10.044 77.126,37.061 35.379,53.525 Z"
+         class="selected"
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path2"
+         inkscape:label="path2" />
+      <path
+         d="M 25.477,97.243 67.251,204.91 112.527,187.343 70.753,79.677 Z"
+         class=""
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path3" />
+      <path
+         d="m 71.433,215.688 8.727,22.493 45.276,-17.567 -8.727,-22.493 z"
+         class=""
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path4" />
+      <path
+         d="m 83.51,246.815 8.727,22.491 45.276,-17.566 -8.727,-22.492 z"
+         class=""
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path5" />
+      <path
+         d="m 95.532,277.802 8.727,22.493 45.276,-17.567 -8.727,-22.493 z"
+         class=""
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path7" />
+      <path
+         d="m 107.608,308.928 8.728,22.493 45.276,-17.567 -8.727,-22.493 z"
+         class=""
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path10" />
+      <path
+         d="m 119.373,339.248 25.566,66.14808 43.40411,-20.68515 L 164.649,321.682 Z"
+         class=""
+         fill="#ffffff"
+         fill-opacity="1"
+         id="path12"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+  </g>
+</svg>

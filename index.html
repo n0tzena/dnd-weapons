@@ -6,8 +6,33 @@
     <title>Armas D&D 5e</title>
     <link rel="stylesheet" href="style.css">
     <script src="weapon.js"></script>
+    <style id="darkMode">
+        body
+        {
+            color: white;
+            background-color: rgb(10, 10, 10);
+        }
+        .description::-webkit-scrollbar
+        {
+            width: 5px;
+            background-color: rgb(24, 24, 24);
+            border-radius: 5px;
+        }
+        .description::-webkit-scrollbar-thumb
+        {
+            background: #707070;
+            border-radius: 5px;
+        }
+        .weaponContainer 
+        {
+            border: 2px solid rgb(68, 68, 68);
+        }
+    </style>
 </head>
 <body>
+    <div class="nightMode">
+        <img id="nightModeIcon" onclick="alternateDarkMode()" src="./images/">
+    </div>
     <div class="weaponWrapper" id="simplesCorpo">
         <h1>Armas Simples Corpo-a-Corpo</h1>
     </div>
@@ -22,11 +47,49 @@
     </div>
 
     <script>
+        darkModeStyle = document.getElementById("darkMode");
+        nightModeIcon = document.getElementById("nightModeIcon");    
+
+        function darkModeIcons()
+        {
+            // troca os icones
+            if(darkModeStyle.disabled)
+            {
+                nightModeIcon.src = "./images/night-sleep.svg";
+            } else {
+                nightModeIcon.src = "./images/sun.svg"
+            }
+        }
+        // modo noturno
+        function alternateDarkMode()
+        {
+            // inverte o tema atual
+            darkModeStyle.disabled = !darkModeStyle.disabled;
+            darkModeIcons();
+            // guarda o tema preferido
+            localStorage.setItem("nightMode", darkModeStyle.disabled)
+        }
+
+        // coloca o tema que o usuario deixou
+        previousMode = localStorage.getItem("nightMode");
+        if(previousMode === "false")
+        darkModeStyle.disabled = false;
+        else darkModeStyle.disabled = true;
+        darkModeIcons();
+
         CreateWeapon("adaga", "simplesCorpo");
         CreateWeapon("azagaia", "simplesCorpo");
         CreateWeapon("bordao", "simplesCorpo");
+        CreateWeapon("clava_grande", "simplesCorpo");
+        CreateWeapon("maca", "simplesCorpo");
+        CreateWeapon("foice_curta", "simplesCorpo");
+        CreateWeapon("porrete", "simplesCorpo");
+        CreateWeapon("martelo_leve", "simplesCorpo");
+        CreateWeapon("machadinha", "simplesCorpo");
         CreateWeapon("arco_curto", "simplesDistancia");
         CreateWeapon("rapieira", "marciaisCorpo");
+        CreateWeapon("mangual", "marciaisCorpo");
+        CreateWeapon("maca_estrela", "marciaisCorpo");
         CreateWeapon("besta_de_mao", "marciaisDistancia");
     </script>
 </body>

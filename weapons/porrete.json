@@ -1,0 +1,13 @@
+{
+    "name": "Porrete",
+    "weaponIcon": "bone-mace.svg",
+    "damageType": "1d4 Concussão",
+    "weight": "1 kg",
+    "value": "1 pp",
+    "properties": 
+    [
+        {
+            "property": "<strong>Leve</strong> <i class='icon leve'></i>: Combate com duas armas: Você pode atacar com outra arma leve na outra mão."
+        }
+    ]
+}

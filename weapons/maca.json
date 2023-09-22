@@ -1,0 +1,7 @@
+{
+    "name": "Maça",
+    "weaponIcon": "flanged-mace.svg",
+    "damageType": "1d6 Concussão",
+    "weight": "2 kg",
+    "value": "5 po"
+}
