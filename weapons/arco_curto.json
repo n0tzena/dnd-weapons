@@ -1,0 +1,19 @@
+{
+    "name": "Arco Curto",
+    "weaponIcon": "pocket-bow.svg",
+    "damageType": "1d6 Perfurante (Distância 24/96)",
+    "weight": "1 kg",
+    "value": "25 po",
+    "properties": 
+    [
+        {
+            "property": "<strong>Munição</strong> <i class='icon municao'></i>: Você só pode utilizar esta arma se possuir a munição para disparar a arma. Sacar a munição do seu recipiente faz parte do ataque. Cada vez que você atacar com essa arma, você gasta uma peça de munição. Você pode recuperar metade da munição gasta no final da batalha, gastando 1 minuto para procurar. Depois que você atacar, precisa recarregar a arma. Recarregar uma arma de uma mão requer uma mão livre."
+        },
+        {
+            "property": "<strong>Duas Mãos</strong> <i class='icon duas-maos'></i>: Essa arma requer as duas mãos para realizar um ataque."
+        },
+        {
+            "property": "<strong>Distância</strong> <i class='icon distancia'></i>: Esta arma pode ser usada para um ataque à distância. Você está em desvantagem se atacar além da distância mínima (primeiro número). Você não pode atacar um alvo além da distância máxima (segundo número)."
+        }
+    ]
+}
