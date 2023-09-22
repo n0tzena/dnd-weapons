@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Beleren";
+    src: url("./fonts/Beleren.ttf");
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./fonts/Lato-Regular.ttf");
+}
+
+body
+{
+    font-family: "Lato-Regular";
+}
+
+h1
+{
+    font-family: "Beleren";
+}
+
+.weaponWrapper
+{
+    text-align: center;
+}
+.weaponContainer
+{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.header
+{
+    display: flex;
+    justify-content: left;
+}
+
+.header img
+{
+    width: 80px;
+    margin: 4px;
+    border-radius: 6px;
+}
+
+.headerText
+{
+    display: inline-block;
+    text-align: left;
+}
+.headerText h1
+{
+    margin: 0;
+    font-family: 'Beleren','Helvetica';
+}
+
+.weaponInfo
+{
+    justify-self:right;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+}
+
+.description
+{
+    overflow-y: scroll;
+    max-height: 150px;
+    text-align: left;
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.description::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+}
+.description::-webkit-scrollbar-thumb
+{
+    background: #000000;
+    border-radius: 5px;
+}
+.descriptionSection
+{
+    margin: 0 0 10px 0;
+}
+
+/* Icons */
+/* All icons from https://game-icons.net */ 
+/* Todos os ícones vem daqui https://game-icons.net */
+/* ty Lorc! */
+
+.icon
+{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+.arremesso
+{
+    background-image: url("./images/throwing-ball.svg");
+}
+.peso
+{
+    background-image: url("./images/weight.svg");
+}
+.coins
+{
+    background-image: url("./images/coins.svg");
+}
+.acuidade
+{
+    background-image: url("./images/shut-rose.svg");
+}
+.leve
+{
+    background-image: url("./images/feather.svg");
+}
+.distancia
+{
+    background-image: url("./images/path-distance.svg");
+}

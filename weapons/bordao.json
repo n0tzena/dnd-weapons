@@ -1,0 +1,13 @@
+{
+    "name": "Bordão",
+    "weaponIcon": "bo.svg",
+    "damageType": "1d6 Concussão (Versátil 1d8)",
+    "weight": "2 kg",
+    "value": "2 pp",
+    "properties": 
+    [
+        {
+            "property": "<strong>Versátil</strong> <i class='icon versatil'></i>: Você pode usar essa arma com uma ou duas mãos. Caso use com as duas mãos, você usa o valor de dano entre parênteses para atacar."
+        }
+    ]
+}

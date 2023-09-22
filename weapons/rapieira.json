@@ -1,0 +1,13 @@
+{
+    "name": "Rapieira",
+    "weaponIcon": "sword-hilt.svg",
+    "damageType": "1d8 Perfurante",
+    "weight": "1 kg",
+    "value": "25 po",
+    "properties": 
+    [
+        {
+            "property": "<strong>Acuidade</strong> <i class='icon acuidade'></i>: Você pode usar seu modificador de Força ou Destreza para realizar a jogada de ataque e de dano."
+        }
+    ]
+}

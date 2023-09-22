@@ -1,0 +1,21 @@
+arremesso
+<strong>Arremesso</strong> <i class='icon arremesso'></i>: Você pode fazer um ataque à distância com a arma. Você utiliza os mesmos modificadores que poderia utilizar num ataque corpo a corpo.
+
+acuidade
+<strong>Acuidade</strong> <i class='icon acuidade'></i>: Você pode usar seu modificador de Força ou Destreza para realizar a jogada de ataque e de dano.
+
+leve
+<strong>Leve</strong> <i class='icon leve'></i>: Combate com duas armas: Você pode atacar com outra arma corpo a corpo leve na outra mão.
+
+distancia
+<strong>Distância</strong> <i class='icon distancia'></i>: Esta arma pode ser usada para um ataque à distância. Você está em desvantagem se atacar além da distância mínima (primeiro número). Você não pode atacar um alvo além da distância máxima (segundo número).
+
+versatil
+<strong>Versátil</strong> <i class='icon versatil'></i>: Você pode usar essa arma com uma ou duas mãos. Caso use com as duas mãos, você usa o valor de dano entre parênteses para atacar.
+
+pesada
+<strong>Pesada</strong> <i class='icon pesada'></i>: Criaturas pequenas têm desvantagem ao realizar jogadas de ataque com essa arma.
+
+alcance
+
+
