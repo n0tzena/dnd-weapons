@@ -10,7 +10,7 @@
         body
         {
             color: white;
-            background-color: rgb(10, 10, 10);
+            background-color: #000000;
         }
         .description::-webkit-scrollbar
         {
@@ -30,22 +30,19 @@
     </style>
 </head>
 <body>
-    <div class="nightMode">
-        <img id="nightModeIcon" onclick="alternateDarkMode()" src="./images/">
-    </div>
-    <div class="weaponWrapper" id="simplesCorpo">
-        <h1>Armas Simples Corpo-a-Corpo</h1>
-    </div>
-    <div class="weaponWrapper" id="simplesDistancia">
-        <h1>Armas Simples à Distância</h1>
-    </div>
-    <div class="weaponWrapper" id="marciaisCorpo">
-        <h1>Armas Marciais Corpo-a-Corpo</h1>
-    </div>
-    <div class="weaponWrapper" id="marciaisDistancia">
-        <h1>Armas Marciais à Distância</h1>
-    </div>
-
+    <div class="nightMode"><img id="nightModeIcon" onclick="alternateDarkMode()" src="./images/"></div>
+    <h1 class="classHeader">Armas Simples Corpo-a-Corpo</h1>
+    <div class="weaponWrapper" id="simplesCorpo"></div>
+    <h1 class="classHeader">Armas Simples à Distância</h1>
+    <div class="weaponWrapper" id="simplesDistancia"></div>
+    <h1 class="classHeader">Armas Marciais Corpo-a-Corpo</h1>
+    <div class="weaponWrapper" id="marciaisCorpo"></div>
+    <h1 class="classHeader">Armas Marciais à Distância</h1>
+    <div class="weaponWrapper" id="marciaisDistancia"></div>
+    <div style="height: 400px"></div>
+    <footer>
+        Website by Victor Gomes | Icons by <a href="https://game-icons.net">Game-icons.net</a></p>
+    </footer>
     <script>
         darkModeStyle = document.getElementById("darkMode");
         nightModeIcon = document.getElementById("nightModeIcon");    
@@ -91,6 +88,15 @@
         CreateWeapon("mangual", "marciaisCorpo");
         CreateWeapon("maca_estrela", "marciaisCorpo");
         CreateWeapon("besta_de_mao", "marciaisDistancia");
+        CreateWeapon("Lança de Montaria", "marciaisCorpo");
+        CreateWeapon("Besta Leve", "simplesDistancia");
+        CreateWeapon("Besta Pesada", "marciaisDistancia");
+        CreateWeapon("Dardo", "simplesDistancia");
+        CreateWeapon("Funda", "simplesDistancia");
+        CreateWeapon("Zarabatana", "marciaisDistancia");
+        CreateWeapon("Arco Longo", "marciaisDistancia");
+        CreateWeapon("Cimitarra", "marciaisCorpo");
+        CreateWeapon("Alabarda", "marciaisCorpo");
     </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-async function CreateWeapon(file, divId=null)
+async function CreateWeapon(file, divId=null, base64=false)
 {
     weaponJSON = await fetch("./weapons/" + file + ".json");
     parsedJSON = await weaponJSON.json();
@@ -7,9 +7,14 @@ async function CreateWeapon(file, divId=null)
     const header = document.createElement("div"); header.classList.add("header");
     const weaponIcon = document.createElement("img"); weaponIcon.src = "./images/" + parsedJSON.weaponIcon;
 
+    // use image in its base64 format
+    if(base64)
+    weaponIcon.src = parsedJSON.weaponIcon;
+
     const headerText = document.createElement("div"); headerText.classList.add("headerText");
     const headerH1 = document.createElement("h1"); headerH1.innerHTML = parsedJSON.name;
     const headerSpan = document.createElement("span"); headerSpan.innerHTML = parsedJSON.damageType;
+    const propertyIcons = document.createElement("div"); propertyIcons.classList.add("properties");
 
     const weaponInfo = document.createElement("div"); weaponInfo.classList.add("weaponInfo");
     const weaponWeight = document.createElement("span"); weaponWeight.innerHTML = parsedJSON.weight + " <i class='icon peso'></i>";
@@ -30,6 +35,12 @@ async function CreateWeapon(file, divId=null)
     weaponInfo.appendChild(weaponValue);
 
     weapon.appendChild(header);
+
+    if(parsedJSON.propertyIcons)
+    {
+        headerText.appendChild(propertyIcons);
+        propertyIcons.innerHTML = parsedJSON.propertyIcons;
+    }
 
     if(parsedJSON.properties)
     {

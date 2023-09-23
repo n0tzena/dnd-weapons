@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas D&D 5e</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #preview
+        {
+            position: absolute;
+            right: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="weaponWrapper" id="preview">
+        <div class="weaponContainer" id="weaponContainer">
+            <div class="header">
+                <img src="../images/gloves.svg" id="imagem">
+                <div class="headerText">
+                    <h1 id="nome">Teste</h1>
+                    <span id="damageType">1d4 Perfurante (Distância 9/36)</span>
+                    <div class="properties" id="properties"><i class="icon acuidade"></i></div>
+                </div>
+                <div class="weaponInfo">
+                    <span id="peso">0,5 kg <i class="icon peso"></i></span>
+                    <div style="height: 5px;"></div>
+                    <span id="valor">2 po <i class="icon coins"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="form">
+        <div>
+            <label for="nomeInput">Nome</label>
+            <input type="text" id="nomeInput" onchange="update()" placeholder="Ex.: Língua Flamejante">
+        </div>
+        <div>
+            <label for="imagemInput">Ícone</label>
+            <input type="file" id="imagemInput" accept="image/*, .svg" onchange="update()">
+        </div>
+        <div>
+            <label for="damageTypeInput">Tipo de Dano</label>
+            <input type="text" id="damageTypeInput" onchange="update()" placeholder="Ex.: 2d6 Cortante">
+        </div>
+        <div>
+            <label for="pesoInput">Peso</label>
+            <input type="text" id="pesoInput" onchange="update()" placeholder="Ex.: 2 kg">
+        </div>
+        <div>
+            <label for="valorInput">Valor</label>
+            <input type="text" id="valorInput" onchange="update()" placeholder="Ex.: 25 po">
+        </div>
+        <div id="selectNode" style="display: none;">
+            <select>
+                <option value="<strong>Arremesso</strong> <i title='Arremesso' class='icon arremesso'></i>: Você pode fazer um ataque à distância com a arma. Você utiliza os mesmos modificadores que poderia utilizar num ataque corpo a corpo." data-icon="<i title='Arremesso' class='icon arremesso'></i>">Arremesso</option>
+                <option value="<strong>Acuidade</strong> <i title='Acuidade' class='icon acuidade'></i>: Você pode usar seu modificador de Força ou Destreza para realizar a jogada de ataque e de dano." data-icon="<i title='Acuidade' class='icon acuidade'></i>">Acuidade</option>
+                <option value="<strong>Leve</strong> <i title='Leve' class='icon leve'></i>: Combate com duas armas: Você pode atacar com outra arma leve na outra mão." data-icon="<i title='Leve' class='icon leve'></i>">Leve</option>
+                <option value="<strong>Distância</strong> <i title='Distância' class='icon distancia'></i>: Esta arma pode ser usada para um ataque à distância. Você está em desvantagem se atacar além da distância mínima (primeiro número). Você não pode atacar um alvo além da distância máxima (segundo número)." data-icon="<i title='Distância' class='icon distancia'></i>">Distância</option>
+                <option value="<strong>Versátil</strong> <i title='Versátil' class='icon versatil'></i>: Você pode usar essa arma com uma ou duas mãos. Caso use com as duas mãos, você usa o valor de dano entre parênteses para atacar." data-icon="<i title='Versátil' class='icon versatil'></i>">Versátil</option>
+                <option value="<strong>Pesada</strong> <i title='Pesada' class='icon pesada'></i>: Criaturas pequenas têm desvantagem ao realizar jogadas de ataque com essa arma." data-icon="<i title='Pesada' class='icon pesada'></i>">Pesada</option>
+                <option value="<strong>Munição</strong> <i title='Munição' class='icon municao'></i>: Você só pode utilizar esta arma se possuir a munição para disparar a arma. Sacar a munição do seu recipiente faz parte do ataque. Cada vez que você atacar com essa arma, você gasta uma peça de munição. Você pode recuperar metade da munição gasta no final da batalha, gastando 1 minuto para procurar. Depois que você atacar, precisa recarregar a arma. Recarregar uma arma de uma mão requer uma mão livre." data-icon="<i title='Munição' class='icon municao'></i>">Munição</option>
+                <option value="<strong>Alcance</strong> <i title='Alcance' class='icon alcance'></i>: Essa arma adiciona 1,5 metro ao seu alcance quando você ataca. Esse alcance também afeta seus ataques de oportunidade." data-icon="<i title='Alcance' class='icon alcance'></i>">Alcance</option>
+                <option value="<strong>Duas Mãos</strong> <i title='Duas Mãos' class='icon duas-maos'></i>: Essa arma requer as duas mãos para realizar um ataque." data-icon="<i title='Duas Mãos' class='icon duas-maos'></i>">Duas Mãos</option>
+                <option value="<strong>Recarga</strong> <i title='Recarga' class='icon recarga'></i>: Você pode disparar apenas uma peça de munição da arma quando usa uma ação, ação bônus, ou reação para disparar, não importando quantos ataques você possua." data-icon="<i title='Recarga' class='icon recarga'></i>">Recarga</option>
+                <option value="<strong>Especial</strong> <i title='Especial' class='icon especial'></i>: Essa arma possui regras especiais detalhando seu uso." data-icon="<i title='Especial' class='icon especial'></i>">Especial</option>
+                <option value="<strong>Lança de Montaria</strong> <i title='Lança de Montaria' class='icon lanca'></i>: Você tem desvantagem para atacar um alvo que esteja a menos de 1,5 metro de você. Além disso, você precisa empunhar este item com as duas mãos enquanto não estiver em uma montaria." data-icon="<i title='Lança de Montaria' class='icon lanca'></i>">Lança de Montaria</option>
+                <option value="<strong>Rede</strong> <i title='Rede' class='icon rede'></i>: Uma criatura Grande ou menor atingida por uma rede fica impedida até que ela se liberte. Uma rede não pode afetar criaturas que não tenham forma definida, ou criaturas Enormes ou maiores que isso. A criatura que ficar impedida pode usar sua ação para realizar um teste de Força (CD 10) para se libertar. Outra criatura no alcance também pode fazer isso por ela. Causar 5 de dano cortante à rede (CA 10) também liberta a criatura afetada sem feri-la, e destrói a rede. Quando você usa uma ação, ação bônus ou reação para atacar com a rede, você só pode realizar um ataque, independente do número de ataques que você possa realizar normalmente." data-icon="<i title='Rede' class='icon rede'></i>">Rede</option>
+            </select>
+        </div>
+    </div>
+    <button onclick="update()">Atualizar</button>
+    <button onclick="createDescriptionField()">Criar Campo</button>
+    <button onclick="SaveAs(true)">Salvar (BASE64)</button>
+    <button onclick="SaveAs()">Salvar</button>
+    <script>
+
+        fileReader = new FileReader();
+
+        form = document.getElementById("form");
+
+        nome = document.getElementById("nome");
+        nomeInput = document.getElementById("nomeInput");
+        imagem = document.getElementById("imagem");
+        imagemInput = document.getElementById("imagemInput");
+        damageType = document.getElementById("damageType");
+        damageTypeInput = document.getElementById("damageTypeInput");
+        peso = document.getElementById("peso");
+        pesoInput = document.getElementById("pesoInput");
+        valor = document.getElementById("valor");
+        valorInput = document.getElementById("valorInput");
+        properties = document.getElementById("properties");
+
+        var attributes;
+
+        container = document.getElementById("weaponContainer");
+
+        fields = [];
+        inputFields = [];
+
+        fieldCount = 0;
+
+        function update()
+        {
+            attributes = "";
+            nome.innerHTML = nomeInput.value;
+            damageType.innerHTML = damageTypeInput.value;
+            peso.innerHTML = pesoInput.value + " <i class='icon peso'></i>";
+            valor.innerHTML = valorInput.value + " <i class='icon coins'></i>";
+
+            fileReader.onloadend = () => 
+            {
+                imagem.src = fileReader.result;
+            }
+
+            if(imagemInput.files[0])
+            fileReader.readAsDataURL(imagemInput.files[0]);
+
+            fields.forEach((field, index) => 
+            {
+                selectBox = inputFields[index].children[0]
+                attributes += selectBox.options[selectBox.selectedIndex].dataset.icon;
+                field.fieldObject.innerHTML = inputFields[index].children[0].value;
+            });
+
+            properties.innerHTML = attributes;
+        }
+
+        function createDescriptionField()
+        {
+            if(document.getElementById("description") == null)
+            {
+                description = document.createElement("div"); description.classList.add("description"); description.id = "description";
+                container.appendChild(description);
+            }
+
+            descriptionSection = document.createElement("div"); 
+            descriptionSection.classList.add("descriptionSection"); 
+            descriptionSection.id = "descriptionSection" + fieldCount;
+
+            selectNode = document.getElementById("selectNode");
+            newSelectNode = selectNode.cloneNode(true);
+
+            newSelectNode.id = "property" + fieldCount;
+            newSelectNode.style = "display: block";
+            newSelectNode.children[0].addEventListener("change", () => {update();});
+
+            description.appendChild(descriptionSection);
+            form.appendChild(newSelectNode);
+            
+            fields.push({"fieldObject": descriptionSection, "fieldName": "descriptionSection" + fieldCount});
+            inputFields.push(newSelectNode);
+
+            fieldCount++;
+            update();
+        }
+
+        function SaveAs(base64 = false)
+        {
+            update();
+            
+            dict = 
+            {
+                "name": nomeInput.value,
+                "weaponIcon": imagem.src,
+                "damageType": damageTypeInput.value,
+                "weight": pesoInput.value,
+                "value": valorInput.value,
+                "propertyIcons": attributes, 
+            }
+            if(inputFields.length > 0)
+            {
+                propertyArray = []
+                inputFields.forEach(field => 
+                {
+                    propertyArray.push(
+                    {
+                        "property": field.children[0].value
+                    });
+                });
+                dict.properties = propertyArray;
+            }
+            // boolean, if false saves weaponIcon as its name file, else saves it as base64
+            if(!base64)
+            {
+                dict.weaponIcon = imagemInput.files[0].name;
+            }
+            link = document.createElement("a");
+            link.setAttribute("href", "data:text," + JSON.stringify(dict));
+            link.setAttribute("download", nomeInput.value + ".json");
+            link.click();
+        }
+
+    </script>
+</body>
+</html>

@@ -12,32 +12,40 @@ body
     font-family: "Lato-Regular";
 }
 
-
+.nightMode
+{
+    text-align: left;
+}
 .nightMode img
 {
     width: 50px;
     cursor: pointer;
 }
-
 h1
 {
     font-family: "Beleren";
+}
+h1.classHeader
+{
+    text-align: center;
 }
 
 .weaponWrapper
 {
     text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
 .weaponContainer
 {
     display: inline-block;
-    width: 400px;
+    width: 420px;
     vertical-align: middle;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 5px;
+    margin: 5px 10px;
 }
-
 
 .header
 {
@@ -48,6 +56,8 @@ h1
 .header img
 {
     width: 80px;
+    height: 80px;
+    object-fit: contain;
     margin: 4px;
     border-radius: 6px;
 }
@@ -56,11 +66,13 @@ h1
 {
     display: inline-block;
     text-align: left;
+    margin: 0 5px;
 }
 .headerText h1
 {
     margin: 0;
     font-family: 'Beleren','Helvetica';
+    font-size: 26px;
 }
 
 .weaponInfo
@@ -82,7 +94,6 @@ h1
     margin: 10px;
     padding: 0 10px;
 }
-
 .description::-webkit-scrollbar
 {
     width: 5px;
@@ -97,6 +108,29 @@ h1
 .descriptionSection
 {
     margin: 0 0 10px 0;
+}
+
+/* alternate style for below 480 pixels width */
+@media screen and (max-width: 480px) 
+{
+    .weaponContainer
+    {
+        width: fit-content;
+        margin: 5px 0;
+    }
+    .headerText
+    {
+        font-size: 14px;
+    }
+    .properties i
+    {
+        height: 16px;
+        width: 16px;
+    }
+    .weaponInfo
+    {
+        max-width: 50px;
+    }
 }
 
 /* Icons */
@@ -150,9 +184,25 @@ h1
 }
 .recarga
 {
-    background-image: url("./images/clockwise-rotation.svg");
+    background-image: url("./images/reload-gun-barrel.svg");
 }
 .pesada
 {
     background-image: url("./images/hand-truck.svg");
+}
+.especial
+{
+    background-image: url("./images/open-book.svg");
+}
+.alcance
+{
+    background-image: url("./images/walking-boot.svg");
+}
+.rede
+{
+    background-image: url("./images/fishing-net.svg");
+}
+.lanca
+{
+    background-image: url("./images/cavalry-lance.svg");
 }

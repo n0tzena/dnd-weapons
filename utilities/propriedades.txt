@@ -1,0 +1,53 @@
+arremesso
+<i title='Arremesso' class='icon arremesso'></i>
+<strong>Arremesso</strong> <i title='Arremesso' class='icon arremesso'></i>: Você pode fazer um ataque à distância com a arma. Você utiliza os mesmos modificadores que poderia utilizar num ataque corpo a corpo.
+
+acuidade
+<i title='Acuidade' class='icon acuidade'></i>
+<strong>Acuidade</strong> <i title='Acuidade' class='icon acuidade'></i>: Você pode usar seu modificador de Força ou Destreza para realizar a jogada de ataque e de dano.
+
+leve
+<i title='Leve' class='icon leve'></i>
+<strong>Leve</strong> <i title='Leve' class='icon leve'></i>: Combate com duas armas: Você pode atacar com outra arma leve na outra mão.
+
+distancia
+<i title='Distância' class='icon distancia'></i>
+<strong>Distância</strong> <i title='Distância' class='icon distancia'></i>: Esta arma pode ser usada para um ataque à distância. Você está em desvantagem se atacar além da distância mínima (primeiro número). Você não pode atacar um alvo além da distância máxima (segundo número).
+
+versatil
+<i title='Versátil' class='icon versatil'></i>
+<strong>Versátil</strong> <i title='Versátil' class='icon versatil'></i>: Você pode usar essa arma com uma ou duas mãos. Caso use com as duas mãos, você usa o valor de dano entre parênteses para atacar.
+
+pesada
+<i title='Pesada' class='icon pesada'></i>
+<strong>Pesada</strong> <i title='Pesada' class='icon pesada'></i>: Criaturas pequenas têm desvantagem ao realizar jogadas de ataque com essa arma.
+
+municao
+<i title='Munição' class='icon municao'></i>
+<strong>Munição</strong> <i title='Munição' class='icon municao'></i>: Você só pode utilizar esta arma se possuir a munição para disparar a arma. Sacar a munição do seu recipiente faz parte do ataque. Cada vez que você atacar com essa arma, você gasta uma peça de munição. Você pode recuperar metade da munição gasta no final da batalha, gastando 1 minuto para procurar. Depois que você atacar, precisa recarregar a arma. Recarregar uma arma de uma mão requer uma mão livre.
+
+alcance
+<i title='Alcance' class='icon alcance'></i>
+<strong>Alcance</strong> <i title='Alcance' class='icon alcance'></i>: Essa arma adiciona 1,5 metro ao seu alcance quando você ataca. Esse alcance também afeta seus ataques de oportunidade.
+
+duas mãos
+<i title='Duas Mãos' class='icon duas-maos'></i>
+<strong>Duas Mãos</strong> <i title='Duas Mãos' class='icon duas-maos'></i>: Essa arma requer as duas mãos para realizar um ataque.
+
+recarga
+<i title='Recarga' class='icon recarga'></i>
+<strong>Recarga</strong> <i title='Recarga' class='icon recarga'></i>: Você pode disparar apenas uma peça de munição da arma quando usa uma ação, ação bônus, ou reação para disparar, não importando quantos ataques você possua.
+
+especial
+<i title='Especial' class='icon especial'></i>
+<strong>Especial</strong> <i title='Especial' class='icon especial'></i>: Essa arma possui regras especiais detalhando seu uso.
+
+lança de montaria
+<i title='Lança de Montaria' class='icon lanca'></i>
+<strong>Lança de Montaria</strong> <i title='Lança de Montaria' class='icon lanca'></i>: Você tem desvantagem para atacar um alvo que esteja a menos de 1,5 metro de você. Além disso, você precisa empunhar este item com as duas mãos enquanto não estiver em uma montaria.
+
+rede
+<i title='Rede' class='icon rede'></i>
+<strong>Rede</strong> <i title='Rede' class='icon rede'></i>: Uma criatura Grande ou menor atingida por uma rede fica impedida até que ela se liberte. Uma rede não pode afetar criaturas que não tenham forma definida, ou criaturas Enormes ou maiores que isso. A criatura que ficar impedida pode usar sua ação para realizar um teste de Força (CD 10) para se libertar. Outra criatura no alcance também pode fazer isso por ela. Causar 5 de dano cortante à rede (CA 10) também liberta a criatura afetada sem feri-la, e destrói a rede. Quando você usa uma ação, ação bônus ou reação para atacar com a rede, você só pode realizar um ataque, independente do número de ataques que você possa realizar normalmente.
+
+
